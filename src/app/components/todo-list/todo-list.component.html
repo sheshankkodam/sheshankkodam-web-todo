@@ -1,0 +1,16 @@
+<img class="logo" width="300" alt="Angular Logo" src="../../../assets/todo-logo.png">
+
+
+
+
+<input type="text" class="todo-input" placeholder="What needs to be done" [(ngModel)]="todoName" (keyup.enter)="addTodo()">
+
+<div class="todo-item" *ngFor="let todo of todos">
+  <div class="todo-item-left">
+    <input type="checkbox">
+    <div class="todo-item-label"> {{ todo.name }}</div>
+  </div>
+  <div class="remove-item">
+    &times;
+  </div>
+</div>
