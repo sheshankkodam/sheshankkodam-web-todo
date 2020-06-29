@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
 ## Development server
-* Navigate to `https://sheshankkodam-web-todo.herokuapp.com/`
+* Navigate to [https://sheshankkodam-web-todo.herokuapp.com/](https://sheshankkodam-web-todo.herokuapp.com/)
 
 * Add a todo by writing in the text box and hot enter 
   ![Alt text](./images/addTodo1.png "Title")
