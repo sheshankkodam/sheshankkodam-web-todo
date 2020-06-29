@@ -1,16 +1,11 @@
-//Install express server
 const express = require('express');
-const path = require('path');
 
 const app = express();
 
-// Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/sheshankkodam-web-todo'));
+app.use(express.static('./dist/sheshankkodam-web-todo'));
 
-app.get('/*', function(req,res) {
+app.get('/*', (req, res) =>
+  res.sendFile('index.html', {root: 'dist/sheshankkodam-web-todo/'}),
+);
 
-  res.sendFile(path.join(__dirname+'/dist/sheshankkodam-web-todo/index.html'));
-});
-
-// Start the app by listening on the default Heroku port
-app.listen(process.env.PORT || 4200);
+app.listen(process.env.PORT || 8080);
