@@ -4,8 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:3000'
-  // apiUrl: 'https://sheshankkodam-be-todo.herokuapp.com'
+  apiUrl: 'https://sheshankkodam-be-todo.herokuapp.com'
 };
 
 /*
