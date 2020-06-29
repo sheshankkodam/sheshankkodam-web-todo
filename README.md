@@ -7,6 +7,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Add a todo by writing in the text box and hot enter 
 
   ![Alt text](./images/addTodo1.png "Title")
+  
   ![Alt text](./images/addedTodo.png "Title")
   
 * Update a todo task by double clicking on the task  
