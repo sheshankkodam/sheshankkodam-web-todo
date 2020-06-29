@@ -1,9 +1,14 @@
 <img class="logo" width="300" alt="Angular Logo" src="../../../assets/todo-logo.png">
-<input type="text" class="todo-input" placeholder="What needs to be done" [(ngModel)]="todoName" (keyup.enter)="addTodo()">
+<input type="text"
+       class="todo-input"
+       placeholder="What needs to be done"
+       [(ngModel)]="todoName" (keyup.enter)="addTodo(customerId, todoName)">
 
 <div class="todo-item" *ngFor="let todo of todos">
   <div class="todo-item-left">
-    <input type="checkbox" [(ngModel)]="todo.completed">
+    <input type="checkbox"
+           (change)="UpdateTodoToCompleted(todo)"
+           [(ngModel)]="todo.completed">
 
     <div *ngIf="!todo.editing; else editingTodo"
          class="todo-item-label"
@@ -21,7 +26,7 @@
              autofocus="">
     </ng-template>
   </div>
-  <div class="remove-item" (click)="deleteTodo(todo.todo_id)">
+  <div class="remove-item" (click)="deleteTodo(todo.customer_id, todo.todo_id)">
     &times;
   </div>
 </div>

@@ -6,6 +6,7 @@ import { AutofocusFixModule } from 'ngx-autofocus-fix'; // <--- new code
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     AutofocusFixModule.forRoot(), // <--- new code
   ],
   providers: [],
